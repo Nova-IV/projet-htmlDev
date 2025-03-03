@@ -25,6 +25,7 @@ header{
 
         .gallery-grid li img {
             width: 100%;
+            filter: drop-shadow(0 0 0.75rem crimson);
         }
 
 }
