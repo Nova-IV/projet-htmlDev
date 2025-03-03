@@ -31,10 +31,61 @@ header{
 }
 
 picture{
+    
+    width: 50rem;
     display: flex;
+    margin: 0 auto 1rem;
     justify-content: center;
 
     img{
         transform: scale(0.7);
     }
+}
+
+article{
+    max-width: 80rem;
+    margin: 0 auto 1rem;
+
+    h2{
+        width: max-content;
+        padding: .5rem 1rem;
+        background-color: #222;
+        color: #fff;
+        font-size: x-large;
+    }
+
+    p{
+        border-top: solid .1rem #222;
+        padding: 1rem;
+        background-color: #707a6f40;
+    }
+}
+
+details{ 
+
+    summary{
+    background-color: #4b0000d8;
+    color: #fff;
+    padding: .5rem 1rem;
+
+     h3 img{
+        filter: invert(100%);
+        transform: scale(1.5);
+     }
+    }
+
+    ul li{
+        text-transform: uppercase;
+        padding: 1rem;
+        background-color: #fafafa;
+    }
+}
+
+details ul li:nth-child(2n + 1){
+    background-color: #78787889;
+    padding: 1rem;
+}
+
+footer *{
+    text-align: center;
 }
