@@ -4,49 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site développeur</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
         <h1 lang="en">
-            JavaScript developer
+            javascript developer
         </h1>
     </header>
     <main>
+        <!-- exception qui confirme la règle -->
+        <div>
+            <!-- source pour les image -->
+            <img
+            loading="lazy"
+            src="https://www.pokepedia.fr/images/2/2c/Damien-ROSA.png"
+            alt="Damien"
+            >
+
+            <img
+            loading="lazy"
+            src="https://www.pokepedia.fr/images/f/fc/Spectra-ROSA.png"
+            alt="Spectra"
+            >
+
+            <img
+            loading="lazy"
+            src="https://www.pokepedia.fr/images/7/75/Glacia-ROSA.png"
+            alt="Glacia"
+          >
+
+          <img
+          loading="lazy"
+          src="https://www.pokepedia.fr/images/f/f9/Aragon-ROSA.png"
+          alt="Aragon"
+        />
+        </div>
+
         <picture>
-            <source media="(min-width:650px)" srcset="./asset/cover.svg">
-            <source media="(min-width:465px)" srcset="./asset/cover.svg">
+          <source media="(min-width:65rem)" srcset="./asset/cover.svg">
+            <source media="(min-width:46.5rem)" srcset="./asset/cover.svg"> 
             <img src="./asset/cover.svg" alt="Cover">
-        </picture>
+        </picture> 
 
         <article>
-            <h2>Description</h2>
+            
+            <h2>
+                
+                Description du projet
+            </h2>
             <details>
-                <summary>Liste des langages</summary>
+                <summary>
+                    <h3>
+                        <img src="./asset/icons8-github.svg" alt="icone">
+                        Liste des langages</h3>
+                </summary>
                 <ul>
                     <li><strong>html</strong></li>
                     <li><strong>css</strong></li>
-                    <li><strong>Js</strong></li>
+                    <li><strong>js</strong></li>
                     <li><strong>php</strong></li>
+                    <li><strong><a target="blank" href="https://icons8.com/icon/106564/github">GitHub icône par Icons8</a></strong></li>
                 </ul>
             </details>
         </article>
-        
         <article>
-            <h2>item</h2>
-            <p>lorem</p>
+            <h2>Compatibilité</h2>
+            <p>During this last day, however, little by little the gangways were cleared, the scaffoldings were taken down, 
+                the fly-wheel cranes disappeared, the fixing of the engines was accomplished,</p>
         </article>
+
         <article>
-            <h2>item</h2>
-            <p>lorem</p>
+            <h2>Flexibilité</h2>
+            <p>During this last day, however, little by little the gangways were cleared,
+                 the scaffoldings were taken down, the fly-wheel cranes disappeared, the fixing of the engines was accomplished,
+
+            </p>
         </article>
-    
+
     </main>
-    
     <footer>
         <p>
             &copy; - MIT - <time datetime="01-01-2025">2025</time>
         </p>
     </footer>
+    <script src="./src/app.js"></script>
 </body>
 </html>
