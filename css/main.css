@@ -29,3 +29,12 @@ header{
         }
 
 }
+
+picture{
+    display: flex;
+    justify-content: center;
+
+    img{
+        transform: scale(0.7);
+    }
+}
