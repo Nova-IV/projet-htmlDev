@@ -124,10 +124,8 @@ footer *{
 }
 
 @media screen and (max-width: 90.0rem){
-    body{
-        margin: 1%;
-    }
-    
+
+
     header{
         flex-direction: column;
         h1{
@@ -136,7 +134,7 @@ footer *{
     }
 
     .gallery-content{
-        max-width: auto;
+        width: auto;
         margin: 5rem auto 2rem;
         
             .gallery-grid{
@@ -170,16 +168,19 @@ footer *{
 
 }
 
-@media screen and (orientation: landscape) {
-    header{
-        header{
-            flex-direction: row;
-            h1{
-                font-size: 1.75rem;
-            }
-        }
+@media screen and (orientation: landscape){
+    header{ 
+      flex-direction: row; 
+      h1{
+        font-size: 2rem;
+      }
     }
-    
+    nav ul{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
 }
 
 
