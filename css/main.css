@@ -39,6 +39,7 @@ picture{
 
     img{
         transform: scale(0.7);
+        filter: drop-shadow(0 0 0.75rem rgb(19, 0, 143));
     }
 }
 
@@ -68,9 +69,9 @@ details{
     color: #fff;
     padding: .5rem 1rem;
 
-     h3 img{
-        filter: invert(100%);
-        transform: scale(1.5);
+     h3::before{
+        content: " +📂 ";
+        color: #fff;
      }
     }
 
@@ -78,12 +79,15 @@ details{
         text-transform: uppercase;
         padding: 1rem;
         background-color: #fafafa;
+        :nth-child(2n + 1){
+            background-color: #78787889;
+            padding: 1rem;
+        }
     }
 }
 
-details ul li:nth-child(2n + 1){
-    background-color: #78787889;
-    padding: 1rem;
+details[open] > summary h3::before{
+    content: " -📁 ";
 }
 
 footer *{
