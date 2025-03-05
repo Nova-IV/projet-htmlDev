@@ -23,17 +23,24 @@ header{
 
         li{
             width: 18rem;
-            line-height: 7.5;
+            line-height: 6.5;
             text-transform: uppercase;
 
             *{
                 display: block;
+                transition: all .5s ease-in-out;
                 text-align: center;
                 color: #fff;
             }
         }
     }
 }
+
+nav ul li:hover a {
+    background-color: #454545;
+    color: #fff;
+}
+
 .gallery-content{
     max-width: 90.0rem;
     margin: 5rem auto 2rem;
