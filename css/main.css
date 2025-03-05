@@ -3,14 +3,35 @@
 /* theme */ 
 
 header{
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     h1{
-        background-color: #222;
-        line-height: 8rem;
+        line-height: 8.5rem;
         color: #fff;
-        text-align: center;
+        /*text-align: center;*/
         text-transform: uppercase;
         font-weight: bolder;
+        padding-left: 2rem;
+    }
+
+    nav ul{
+        display: flex;
+        align-items: center;
+
+        li{
+            width: 18rem;
+            line-height: 7.5;
+            text-transform: uppercase;
+
+            *{
+                display: block;
+                text-align: center;
+                color: #fff;
+            }
+        }
     }
 }
 .gallery-content{
