@@ -23,7 +23,7 @@ header{
 
         li{
             width: 18rem;
-            line-height: 6.5;
+            line-height: 6.0;
             text-transform: uppercase;
 
             *{
@@ -107,11 +107,12 @@ details{
         text-transform: uppercase;
         padding: 1rem;
         background-color: #fafafa;
-        :nth-child(2n + 1){
-            background-color: #78787889;
-            padding: 1rem;
-        }
     }
+}
+
+details ul li:nth-child(2n + 1){
+    background-color: #78787889;
+    padding: 1rem;
 }
 
 details[open] > summary h3::before{
@@ -121,3 +122,64 @@ details[open] > summary h3::before{
 footer *{
     text-align: center;
 }
+
+@media screen and (max-width: 90.0rem){
+    body{
+        margin: 1%;
+    }
+    
+    header{
+        flex-direction: column;
+        h1{
+            font-size: 1.75rem;
+        }
+    }
+
+    .gallery-content{
+        max-width: auto;
+        margin: 5rem auto 2rem;
+        
+            .gallery-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            }
+    }
+
+    .image{
+        img{
+            transform:scale(0.5) ;
+        }
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    
+    details{ 
+
+        summary{    
+         h3{
+            font-size: xx-large;
+         }
+        }
+    }
+
+
+}
+
+@media screen and (orientation: landscape) {
+    header{
+        header{
+            flex-direction: row;
+            h1{
+                font-size: 1.75rem;
+            }
+        }
+    }
+    
+}
+
+
