@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("loaded ok !");
-    let elTitre;
-    elTitre = document.querySelector("title");
-    elTitre.innerText = "Développement WEB";
+
+    /*   elTitre = document.querySelector("title")
+      elTitre.innerText = "Développement WEB"
+      mainTitle = document.querySelector("header h1")
+      mainTitle.innerText += " et développement PHP" */
+
+    const mainTitle = document.querySelectorAll("title, h1");
+    mainTitle.forEach(el => el.innerText = "Développeur PHP");
 });
 
 /* let age, ville, nombre, version, chiffre
